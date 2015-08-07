@@ -1,0 +1,30 @@
+{
+    "name": "Minimal plugin",
+    "idName": "Minimal",
+    "id": "6878754a-f27d-4007-a4e5-b030b55853f5",
+    "vendors": [
+        {
+            "name": "Minimal vendor",
+            "idName": "minimal",
+            "id": "3897e82e-7c48-4591-9a2f-0f56c55a96a4",
+            "deviceClasses": [
+                {
+                    "deviceClassId": "7014e5f1-5b04-407a-a819-bbebd11fa372",
+                    "idName": "minimal",
+                    "name": "Minimal device",
+                    "createMethods": ["user"],
+                    "paramTypes": [
+                        {
+                            "name": "name",
+                            "type": "QString",
+                            "inputType": "TextLine",
+                            "defaultValue": "Minimal device",
+                            "readOnly": true
+                        }
+		            ]
+		        }
+            ]
+        }
+    ]
+}
+	    
