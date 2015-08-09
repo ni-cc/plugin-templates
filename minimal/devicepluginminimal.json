@@ -17,14 +17,11 @@
                         {
                             "name": "name",
                             "type": "QString",
-                            "inputType": "TextLine",
-                            "defaultValue": "Minimal device",
-                            "readOnly": true
+                            "defaultValue": "Minimal device default name"
                         }
-		            ]
-		        }
+                    ]
+                }
             ]
         }
     ]
 }
-	    

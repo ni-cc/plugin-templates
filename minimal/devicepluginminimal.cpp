@@ -37,17 +37,19 @@ DevicePluginMinimal::DevicePluginMinimal()
  */
 DeviceManager::HardwareResources DevicePluginMinimal::requiredHardware() const
 {
-    return DeviceManager::HardwareResource;
+    return DeviceManager::HardwareResourceNone;
 }
 
 /* This method will be called from the devicemanager while he
  * is setting up a new device. Here the developer has the chance to
- * process the setup on the actual device and report the result.
+ * perform the setup on the actual device and report the result.
  */
 DeviceManager::DeviceSetupStatus DevicePluginMinimal::setupDevice(Device *device)
 {
     Q_UNUSED(device)
-    qCDebug(dcMinimal) << "setup device" << device->name() << device->id();
+    qCDebug(dcMinimal) << "Hello word! Setting up a new device:" << device->name();
+    qCDebug(dcMinimal) << "The new device has the DeviceId" << device->id().toString();
+    qCDebug(dcMinimal) << device->params();
 
     return DeviceManager::DeviceSetupStatusSuccess;
 }

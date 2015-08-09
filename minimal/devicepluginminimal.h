@@ -38,4 +38,4 @@ public:
     DeviceManager::DeviceSetupStatus setupDevice(Device *device) override;
 };
 
-#endif // DEVICEPLUGINBOBLIGHT_H
+#endif // DEVICEPLUGINMINIMAL_H
