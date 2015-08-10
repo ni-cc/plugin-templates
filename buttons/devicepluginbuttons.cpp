@@ -21,6 +21,8 @@
 #include "devicepluginbuttons.h"
 #include "plugininfo.h"
 
+// Note: You can find the tutorial for this code here -> http://dev.guh.guru/write-plugins.html
+
 /* The constructor of this device plugin. */
 DevicePluginButtons::DevicePluginButtons()
 {
@@ -32,8 +34,7 @@ DevicePluginButtons::DevicePluginButtons()
  * For multiple resources use the OR operator:
  * Example:
  *
- *  return DeviceManager::HardwareResourceTimer | DeviceManager::HardwareResourceNetworkManager
- *
+ *  return DeviceManager::HardwareResourceTimer | DeviceManager::HardwareResourceNetworkManager;
  */
 DeviceManager::HardwareResources DevicePluginButtons::requiredHardware() const
 {
@@ -54,8 +55,12 @@ DeviceManager::DeviceSetupStatus DevicePluginButtons::setupDevice(Device *device
     return DeviceManager::DeviceSetupStatusSuccess;
 }
 
+/* This method will be called whenever a client or the RuleEngine want's to execute
+ * an action on the given device.
+ */
 DeviceManager::DeviceError DevicePluginButtons::executeAction(Device *device, const Action &action)
 {
+    // Tutorial 2
     // Check the DeviceClassId for "Simple Button"
     if (device->deviceClassId() == simpleButtonDeviceClassId ) {
 
@@ -73,6 +78,8 @@ DeviceManager::DeviceError DevicePluginButtons::executeAction(Device *device, co
         return DeviceManager::DeviceErrorActionTypeNotFound;
     }
 
+
+    // Tutorial 3
     // Check the DeviceClassId for "Power Button"
     if (device->deviceClassId() == powerButtonDeviceClassId ) {
 
@@ -93,6 +100,8 @@ DeviceManager::DeviceError DevicePluginButtons::executeAction(Device *device, co
         return DeviceManager::DeviceErrorActionTypeNotFound;
     }
 
+
+    // Tutorial 4
     // Check the DeviceClassId for "Alternative Power Button"
     if (device->deviceClassId() == alternativePowerButtonDeviceClassId) {
 
@@ -104,8 +113,8 @@ DeviceManager::DeviceError DevicePluginButtons::executeAction(Device *device, co
             bool power = powerParam.value().toBool();
 
             qCDebug(dcButtons) << "Alternative power button" << device->paramValue("name").toString() << "set power to" << power;
-            qCDebug(dcButtons) << "ActionTypeId" << action.actionTypeId().toString();
-            qCDebug(dcButtons) << "StateTypeId" << alternativePowerStateTypeId;
+            qCDebug(dcButtons) << "ActionTypeId :" << action.actionTypeId().toString();
+            qCDebug(dcButtons) << "StateTypeId  :" << alternativePowerStateTypeId.toString();
 
             // Set the "power" state
             device->setStateValue(alternativePowerStateTypeId, power);

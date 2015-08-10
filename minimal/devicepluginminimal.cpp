@@ -21,6 +21,8 @@
 #include "devicepluginminimal.h"
 #include "plugininfo.h"
 
+// Note: You can find the documentation for this code here -> http://dev.guh.guru/write-plugins.html
+
 /* The constructor of this device plugin. */
 DevicePluginMinimal::DevicePluginMinimal()
 {

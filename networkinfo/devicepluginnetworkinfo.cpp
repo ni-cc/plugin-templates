@@ -23,6 +23,8 @@
 
 #include <QJsonDocument>
 
+// Note: You can find the documentation for this code here -> http://dev.guh.guru/write-plugins.html
+
 // The constructor of this device plugin.
 DevicePluginNetworkInfo::DevicePluginNetworkInfo()
 {
