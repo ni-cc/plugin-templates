@@ -1,0 +1,100 @@
+{
+    "name": "Buttons",
+    "idName": "Buttons",
+    "id": "7bfd3af5-7983-4540-9398-d14085d069f4",
+    "vendors": [
+        {
+            "name": "Button vendor",
+            "idName": "buttons",
+            "id": "fd2ae067-2c3d-4332-9c4b-ee0af653bcaf",
+            "deviceClasses": [
+                {
+                    "deviceClassId": "73bb670b-e7a3-40da-bd6f-3260f017ec80",
+                    "idName": "simpleButton",
+                    "name": "Simple Button",
+                    "createMethods": ["user"],
+                    "paramTypes": [
+                        {
+                            "name": "name",
+                            "type": "QString",
+                            "defaultValue": "Simple button device default name"
+                        }
+                    ],
+                    "actionTypes": [
+                        {
+                            "id": "64c4ced5-9a1a-4858-81dd-1b5c94dba495",
+                            "idName": "pressSimpleButton",
+                            "name": "press the button"
+                        }
+                    ],
+                    "eventTypes": [
+                        {
+                            "id": "f9652210-9aed-4f38-8c19-2fd54f703fbe",
+                            "idName": "simpleButtonPressed",
+                            "name": "button pressed"
+                        }
+                    ]
+                },
+                {
+                    "deviceClassId": "fb587886-a649-42d0-9609-8423de587685",
+                    "idName": "powerButton",
+                    "name": "Power Button",
+                    "createMethods": ["user"],
+                    "paramTypes": [
+                        {
+                            "name": "name",
+                            "type": "QString",
+                            "defaultValue": "Power button device default name"
+                        }
+                    ],
+                    "actionTypes": [
+                        {
+                            "id": "1e97a057-c525-463d-a593-9b8dce16645f",
+                            "idName": "setPowerButton",
+                            "name": "set power",
+                            "paramTypes": [
+                                {
+                                    "name": "power",
+                                    "type": "bool",
+                                    "defaultValue": false
+                                }
+                            ]
+                        }
+                    ],
+                    "stateTypes": [
+                        {
+                            "id": "9328693e-9054-47bc-b95f-ae3e42d50b8b",
+                            "idName": "power",
+                            "name": "power",
+                            "type": "bool",
+                            "defaultValue": false
+                        }
+                    ]
+                },
+                {
+                    "deviceClassId": "910b2f58-70dc-4da3-89ae-9e7393290ccb",
+                    "idName": "alternativePowerButton",
+                    "name": "Alternative Power Button",
+                    "createMethods": ["user"],
+                    "paramTypes": [
+                        {
+                            "name": "name",
+                            "type": "QString",
+                            "defaultValue": "Alternative power button device default name"
+                        }
+                    ],
+                    "stateTypes": [
+                        {
+                            "id": "fa63c0b9-10e5-4280-9cc2-243bf27c05ad",
+                            "idName": "alternativePower",
+                            "name": "power",
+                            "type": "bool",
+                            "defaultValue": false,
+                            "writable": {}
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
