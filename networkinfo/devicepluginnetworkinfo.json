@@ -1,0 +1,78 @@
+{
+    "name": "Network Info",
+    "idName": "NetworkInfo",
+    "id": "c16852d7-f123-4dd5-983d-fc2eedb885aa",
+    "vendors": [
+        {
+            "name": "guh",
+            "idName": "guh",
+            "id": "2062d64d-3232-433c-88bc-0d33c0ba2ba6",
+            "deviceClasses": [
+                {
+                    "deviceClassId": "6c9d4852-cdfa-4eba-9ff2-c084d6f9d756",
+                    "idName": "info",
+                    "name": "Info about Network",
+                    "createMethods": ["user"],
+                    "paramTypes": [
+                        {
+                            "name": "name",
+                            "type": "QString",
+                            "defaultValue": "Network Information"
+                        }
+                    ],
+                    "stateTypes": [
+                        {
+                            "name": "ip address",
+                            "id": "0b4751ca-f126-4369-bfc0-f745985ae59b",
+                            "idName": "address",
+                            "type": "QString",
+                            "defaultValue": "-"
+                        },
+                        {
+                            "name": "city",
+                            "id": "8c777cf7-1a54-4b80-a8fe-141ae2334a63",
+                            "idName": "city",
+                            "type": "QString",
+                            "defaultValue": "-"
+                        },
+                        {
+                            "name": "country",
+                            "id": "69a01d64-c68f-4175-85f3-69329fd66b52",
+                            "idName": "country",
+                            "type": "QString",
+                            "defaultValue": "-"
+                        },
+                        {
+                            "name": "time zone",
+                            "id": "ab5278ce-87e0-4a79-9d08-c989c50d62cb",
+                            "idName": "timeZone",
+                            "type": "QString",
+                            "defaultValue": "-"
+                        },
+                        {
+                            "name": "lon",
+                            "id": "5a3a54d3-afd4-464a-adba-23def0110ed7",
+                            "idName": "lon",
+                            "type": "double",
+                            "defaultValue": 0
+                        },
+                        {
+                            "name": "lat",
+                            "id": "f7b52b93-688d-47bb-83cc-85a694f33537",
+                            "idName": "lat",
+                            "type": "double",
+                            "defaultValue": 0
+                        }
+                    ],
+                    "actionTypes": [
+                        {
+                            "name": "update",
+                            "id": "0b4751ca-f126-4369-bfc0-f745985ae59b",
+                            "idName": "update"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
