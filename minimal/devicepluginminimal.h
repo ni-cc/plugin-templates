@@ -27,12 +27,11 @@
 class DevicePluginMinimal : public DevicePlugin
 {
     Q_OBJECT
-
     Q_PLUGIN_METADATA(IID "guru.guh.DevicePlugin" FILE "devicepluginminimal.json")
     Q_INTERFACES(DevicePlugin)
 
 public:
-    explicit DevicePluginMinimal();
+    DevicePluginMinimal();
 
     DeviceManager::HardwareResources requiredHardware() const override;
     DeviceManager::DeviceSetupStatus setupDevice(Device *device) override;

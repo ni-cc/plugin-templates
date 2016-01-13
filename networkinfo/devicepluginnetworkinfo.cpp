@@ -62,7 +62,7 @@ void DevicePluginNetworkInfo::networkManagerReplyReady(QNetworkReply *reply)
         // Print the warning message
         qCWarning(dcNetworkInfo) << "Reply error" << reply->errorString();
 
-        // The action execution is finished, and was not successfully
+        // The action execution is finished and was not successfully
         emit actionExecutionFinished(actionId, DeviceManager::DeviceErrorHardwareNotAvailable);
 
         // Important -> delete the reply to prevent a memory leak!
@@ -83,6 +83,8 @@ void DevicePluginNetworkInfo::networkManagerReplyReady(QNetworkReply *reply)
 // This method will be called whenever a client or the rule engine wants to execute an action for the given device.
 DeviceManager::DeviceError DevicePluginNetworkInfo::executeAction(Device *device, const Action &action)
 {
+    qCDebug(dcNetworkInfo) << "Execute action" << device->id() << action.id() << action.params();
+
     // check if this device is a Network info device using the DeviceClassId
     if (device->deviceClassId() != infoDeviceClassId) {
         return DeviceManager::DeviceErrorDeviceClassNotFound;

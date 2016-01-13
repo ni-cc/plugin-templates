@@ -26,6 +26,7 @@
 /* The constructor of this device plugin. */
 DevicePluginMinimal::DevicePluginMinimal()
 {
+
 }
 
 /* This method will be called from the devicemanager to get
@@ -34,7 +35,7 @@ DevicePluginMinimal::DevicePluginMinimal()
  * For multiple resources use the OR operator:
  * Example:
  *
- *  return DeviceManager::HardwareResourceTimer | DeviceManager::HardwareResourceNetworkManager
+ * return DeviceManager::HardwareResourceTimer | DeviceManager::HardwareResourceNetworkManager;
  *
  */
 DeviceManager::HardwareResources DevicePluginMinimal::requiredHardware() const
@@ -49,7 +50,7 @@ DeviceManager::HardwareResources DevicePluginMinimal::requiredHardware() const
 DeviceManager::DeviceSetupStatus DevicePluginMinimal::setupDevice(Device *device)
 {
     Q_UNUSED(device)
-    qCDebug(dcMinimal) << "Hello word! Setting up a new device:" << device->name();
+    qCDebug(dcMinimal) << "Hello world! Setting up a new device:" << device->name();
     qCDebug(dcMinimal) << "The new device has the DeviceId" << device->id().toString();
     qCDebug(dcMinimal) << device->params();
 

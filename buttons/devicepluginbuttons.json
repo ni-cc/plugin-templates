@@ -13,6 +13,9 @@
                     "idName": "simpleButton",
                     "name": "Simple Button",
                     "createMethods": ["user"],
+                    "basicTags": [
+                        "Device"
+                    ],
                     "paramTypes": [
                         {
                             "name": "name",
@@ -40,6 +43,9 @@
                     "idName": "powerButton",
                     "name": "Power Button",
                     "createMethods": ["user"],
+                    "basicTags": [
+                        "Device"
+                    ],
                     "paramTypes": [
                         {
                             "name": "name",
@@ -76,6 +82,9 @@
                     "idName": "alternativePowerButton",
                     "name": "Alternative Power Button",
                     "createMethods": ["user"],
+                    "basicTags": [
+                        "Device"
+                    ],
                     "paramTypes": [
                         {
                             "name": "name",

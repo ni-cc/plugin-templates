@@ -4,15 +4,18 @@
     "id": "c16852d7-f123-4dd5-983d-fc2eedb885aa",
     "vendors": [
         {
+            "id": "2062d64d-3232-433c-88bc-0d33c0ba2ba6",
             "name": "guh",
             "idName": "guh",
-            "id": "2062d64d-3232-433c-88bc-0d33c0ba2ba6",
             "deviceClasses": [
                 {
                     "deviceClassId": "6c9d4852-cdfa-4eba-9ff2-c084d6f9d756",
                     "idName": "info",
                     "name": "Info about Network",
                     "createMethods": ["user"],
+                    "basicTags": [
+                        "Service"
+                    ],
                     "paramTypes": [
                         {
                             "name": "name",
@@ -66,8 +69,8 @@
                     ],
                     "actionTypes": [
                         {
-                            "name": "update",
                             "id": "0b4751ca-f126-4369-bfc0-f745985ae59b",
+                            "name": "update",
                             "idName": "update"
                         }
                     ]

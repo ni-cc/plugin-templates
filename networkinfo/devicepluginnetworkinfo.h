@@ -21,8 +21,8 @@
 #ifndef DEVICEPLUGINNETWORKINFO_H
 #define DEVICEPLUGINNETWORKINFO_H
 
-#include "plugin/deviceplugin.h"
 #include "devicemanager.h"
+#include "plugin/deviceplugin.h"
 
 #include <QHash>
 #include <QNetworkReply>
@@ -40,8 +40,9 @@ public:
     DeviceManager::HardwareResources requiredHardware() const override;
     DeviceManager::DeviceSetupStatus setupDevice(Device *device) override;
 
-    DeviceManager::DeviceError executeAction(Device *device, const Action &action) override;
     void networkManagerReplyReady(QNetworkReply *reply) override;
+
+    DeviceManager::DeviceError executeAction(Device *device, const Action &action) override;
 
 private:
     QHash <ActionId, Device *> m_asyncActions;

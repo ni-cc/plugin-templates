@@ -9,10 +9,13 @@
             "id": "3897e82e-7c48-4591-9a2f-0f56c55a96a4",
             "deviceClasses": [
                 {
-                    "deviceClassId": "7014e5f1-5b04-407a-a819-bbebd11fa372",
-                    "idName": "minimal",
                     "name": "Minimal device",
+                    "idName": "minimal",
+                    "deviceClassId": "7014e5f1-5b04-407a-a819-bbebd11fa372",
                     "createMethods": ["user"],
+                    "basicTags": [
+                        "Device"
+                    ],
                     "paramTypes": [
                         {
                             "name": "name",
