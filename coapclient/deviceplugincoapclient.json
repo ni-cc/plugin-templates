@@ -1,0 +1,70 @@
+{
+    "name": "Coap Client",
+    "idName": "CoapClient",
+    "id": "9ecadcbb-8699-41c2-a2e3-fd51a1faf1a1",
+    "vendors": [
+        {
+            "id": "2062d64d-3232-433c-88bc-0d33c0ba2ba6",
+            "name": "guh",
+            "idName": "guh",
+            "deviceClasses": [
+                {
+                    "deviceClassId": "69dcccbd-a66a-4c5b-8921-2fb86c4c4299",
+                    "idName": "info",
+                    "name": "Coap Client",
+                    "createMethods": ["user"],
+                    "basicTags": [
+                        "Service",
+                        "Sensor",
+                        "Actuator"
+                    ],
+                    "paramTypes": [
+                        {
+                            "name": "url",
+                            "type": "QString",
+                            "inputType": "TextLine",
+                            "defaultValue": "coap://vs0.inf.ethz.ch:5683"
+                        }
+                    ],
+                    "stateTypes": [
+                        {
+                            "id": "b8433a82-cf83-424f-b4a2-3f6507405d6c",
+                            "idName": "notifications",
+                            "name": "notification",
+                            "type": "bool",
+                            "defaultValue": false,
+                            "writable": true
+                        }
+                    ],
+                    "actionTypes": [
+                        {
+                            "id": "9aa31838-b62f-43b3-bdcd-8165840b5edf",
+                            "name": "upload message",
+                            "idName": "upload",
+                            "paramTypes": [
+                                {
+                                    "name": "message",
+                                    "type": "QString",
+                                    "defaultValue": "Hallo world!"
+                                }
+                            ]
+                        }
+                    ],
+                    "eventTypes": [
+                        {
+                            "name": "time changed",
+                            "idName": "time",
+                            "id": "44513802-138e-42f8-86a6-9edd4df77535",
+                            "paramTypes": [
+                                {
+                                    "name": "time",
+                                    "type": "QString"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
