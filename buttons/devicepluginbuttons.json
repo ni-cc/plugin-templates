@@ -20,21 +20,24 @@
                         {
                             "name": "name",
                             "type": "QString",
-                            "defaultValue": "Simple button device default name"
+                            "defaultValue": "Simple button device default name",
+                            "index" : 0
                         }
                     ],
                     "actionTypes": [
                         {
                             "id": "64c4ced5-9a1a-4858-81dd-1b5c94dba495",
                             "idName": "pressSimpleButton",
-                            "name": "press the button"
+                            "name": "press the button",
+                            "index" : 0
                         }
                     ],
                     "eventTypes": [
                         {
                             "id": "f9652210-9aed-4f38-8c19-2fd54f703fbe",
                             "idName": "simpleButtonPressed",
-                            "name": "button pressed"
+                            "name": "button pressed",
+                            "index" : 0
                         }
                     ]
                 },
@@ -50,7 +53,8 @@
                         {
                             "name": "name",
                             "type": "QString",
-                            "defaultValue": "Power button device default name"
+                            "defaultValue": "Power button device default name",
+                            "index" : 0
                         }
                     ],
                     "actionTypes": [
@@ -58,11 +62,13 @@
                             "id": "1e97a057-c525-463d-a593-9b8dce16645f",
                             "idName": "setPowerButton",
                             "name": "set power",
+                            "index" : 0,
                             "paramTypes": [
                                 {
                                     "name": "power",
                                     "type": "bool",
-                                    "defaultValue": false
+                                    "defaultValue": false,
+                                    "index" : 0
                                 }
                             ]
                         }
@@ -73,7 +79,8 @@
                             "idName": "power",
                             "name": "power",
                             "type": "bool",
-                            "defaultValue": false
+                            "defaultValue": false,
+                            "index" : 0
                         }
                     ]
                 },
@@ -89,7 +96,8 @@
                         {
                             "name": "name",
                             "type": "QString",
-                            "defaultValue": "Alternative power button device default name"
+                            "defaultValue": "Alternative power button device default name",
+                            "index" : 0
                         }
                     ],
                     "stateTypes": [
@@ -99,6 +107,7 @@
                             "name": "power",
                             "type": "bool",
                             "defaultValue": false,
+                            "index" : 0,
                             "writable": true
                         }
                     ]

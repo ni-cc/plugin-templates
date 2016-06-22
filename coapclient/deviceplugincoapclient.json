@@ -23,7 +23,8 @@
                             "name": "url",
                             "type": "QString",
                             "inputType": "TextLine",
-                            "defaultValue": "coap://vs0.inf.ethz.ch:5683"
+                            "defaultValue": "coap://vs0.inf.ethz.ch:5683",
+                            "index" : 0
                         }
                     ],
                     "stateTypes": [
@@ -33,6 +34,7 @@
                             "name": "notification",
                             "type": "bool",
                             "defaultValue": false,
+                            "index" : 0,
                             "writable": true
                         }
                     ],
@@ -41,11 +43,13 @@
                             "id": "9aa31838-b62f-43b3-bdcd-8165840b5edf",
                             "name": "upload message",
                             "idName": "upload",
+                            "index" : 0,
                             "paramTypes": [
                                 {
                                     "name": "message",
                                     "type": "QString",
-                                    "defaultValue": "Hallo world!"
+                                    "defaultValue": "Hallo world!",
+                                    "index" : 0
                                 }
                             ]
                         }
@@ -55,10 +59,12 @@
                             "name": "time changed",
                             "idName": "time",
                             "id": "44513802-138e-42f8-86a6-9edd4df77535",
+                            "index" : 0,
                             "paramTypes": [
                                 {
                                     "name": "time",
-                                    "type": "QString"
+                                    "type": "QString",
+                                    "index" : 0
                                 }
                             ]
                         }

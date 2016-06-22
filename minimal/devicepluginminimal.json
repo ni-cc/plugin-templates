@@ -20,7 +20,8 @@
                         {
                             "name": "name",
                             "type": "QString",
-                            "defaultValue": "Minimal device default name"
+                            "defaultValue": "Minimal device default name",
+                            "index" : 0
                         }
                     ]
                 }

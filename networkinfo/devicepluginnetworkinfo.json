@@ -20,7 +20,8 @@
                         {
                             "name": "name",
                             "type": "QString",
-                            "defaultValue": "Network Information"
+                            "defaultValue": "Network Information",
+                            "index" : 0
                         }
                     ],
                     "stateTypes": [
@@ -29,49 +30,56 @@
                             "id": "0b4751ca-f126-4369-bfc0-f745985ae59b",
                             "idName": "address",
                             "type": "QString",
-                            "defaultValue": "-"
+                            "defaultValue": "-",
+                            "index" : 0
                         },
                         {
                             "name": "city",
                             "id": "8c777cf7-1a54-4b80-a8fe-141ae2334a63",
                             "idName": "city",
                             "type": "QString",
-                            "defaultValue": "-"
+                            "defaultValue": "-",
+                            "index" : 1
                         },
                         {
                             "name": "country",
                             "id": "69a01d64-c68f-4175-85f3-69329fd66b52",
                             "idName": "country",
                             "type": "QString",
-                            "defaultValue": "-"
+                            "defaultValue": "-",
+                            "index" : 2
                         },
                         {
                             "name": "time zone",
                             "id": "ab5278ce-87e0-4a79-9d08-c989c50d62cb",
                             "idName": "timeZone",
                             "type": "QString",
-                            "defaultValue": "-"
+                            "defaultValue": "-",
+                            "index" : 3
                         },
                         {
                             "name": "lon",
                             "id": "5a3a54d3-afd4-464a-adba-23def0110ed7",
                             "idName": "lon",
                             "type": "double",
-                            "defaultValue": 0
+                            "defaultValue": 0,
+                            "index" : 4
                         },
                         {
                             "name": "lat",
                             "id": "f7b52b93-688d-47bb-83cc-85a694f33537",
                             "idName": "lat",
                             "type": "double",
-                            "defaultValue": 0
+                            "defaultValue": 0,
+                            "index" : 5
                         }
                     ],
                     "actionTypes": [
                         {
                             "id": "0b4751ca-f126-4369-bfc0-f745985ae59b",
                             "name": "update",
-                            "idName": "update"
+                            "idName": "update",
+                            "index" : 0
                         }
                     ]
                 }
